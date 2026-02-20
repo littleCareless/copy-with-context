@@ -1,0 +1,33 @@
+# 支持本项目的方式
+# 这些链接将显示在 GitHub 的 "Sponsor" 按钮中
+
+# GitHub Sponsors
+github: your-username
+
+# Patreon (如果使用)
+# patreon: your_username
+
+# Open Collective (如果使用)
+# open_collective: your-project-name
+
+# Ko-fi (如果使用)
+# ko_fi: your_username
+
+# Buy Me a Coffee (如果使用)
+# buy_me_a_coffee: your_username
+
+# PayPal (如果使用)
+# paypal: your_email@example.com
+
+# Custom URL (自定义赞助链接)
+# custom: ["https://your-website.com/donate"]
+
+# 注意：
+# 1. 只能使用一种主要的赞助方式
+# 2. 如果你想接受多种方式，可以使用 custom 数组
+# 3. 删除注释符号 (#) 来启用对应的方式
+# 4. 填写你自己的用户名或链接
+
+# 推荐设置：
+# - GitHub Sponsors 是最简单的方式，直接集成在 GitHub 中
+# - 访问 https://github.com/settings/sponsors 设置

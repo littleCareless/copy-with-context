@@ -1,0 +1,17 @@
+{
+	"extension.displayName": "复制带上下文",
+	"extension.description": "复制选中内容并携带文件路径、行列信息，用于AI辅助开发",
+	"command.copyWithContext.title": "复制带上下文",
+	"command.copyWithContext.category": "复制带上下文",
+	"menus.editor.context.displayName": "复制带上下文",
+	"menus.editor.title.context.displayName": "复制带上下文",
+	"keybindings.copyWithContext.key": "ctrl+shift+c",
+	"keybindings.copyWithContext.mac": "cmd+shift+c",
+	"keybindings.copyWithContext.when": "editorTextFocus && editorHasSelection",
+	"config.copyWithContext.title": "复制带上下文",
+	"config.copyWithContext.description": "复制带上下文扩展的配置",
+	"config.copyWithContext.format.title": "输出格式",
+	"config.copyWithContext.format.description": "自定义复制内容的格式模板",
+	"config.copyWithContext.includeWorkspace.title": "包含工作区信息",
+	"config.copyWithContext.includeWorkspace.description": "在输出中包含工作区信息"
+}

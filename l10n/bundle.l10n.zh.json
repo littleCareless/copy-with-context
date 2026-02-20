@@ -1,0 +1,18 @@
+{
+  "File": "文件",
+  "Path": "路径",
+  "Language": "语言",
+  "Selection": "选中",
+  "Line": "行",
+  "Char": "字符",
+  "Full Path": "完整路径",
+  "Workspace": "工作区",
+  "Cursor": "光标",
+  "Selected Code": "选中代码",
+  "Context for AI assistance": "AI 辅助上下文",
+  "Current Line Context": "当前行上下文",
+  "No active editor": "没有活动的编辑器",
+  "Please select text first": "请先选择要复制的文本",
+  "Copied to clipboard: Line {0}, Char {1} to Line {2}, Char {3}": "已复制到剪贴板：行 {0}，字符 {1} 到行 {2}，字符 {3}",
+  "Copy failed: {0}": "复制失败：{0}"
+}

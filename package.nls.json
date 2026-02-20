@@ -1,0 +1,17 @@
+{
+	"extension.displayName": "Copy with Context",
+	"extension.description": "复制选中内容并携带文件路径、行列信息，用于AI辅助开发",
+	"command.copyWithContext.title": "Copy with Context",
+	"command.copyWithContext.category": "Copy with Context",
+	"menus.editor.context.displayName": "Copy with Context",
+	"menus.editor.title.context.displayName": "Copy with Context",
+	"keybindings.copyWithContext.key": "ctrl+shift+c",
+	"keybindings.copyWithContext.mac": "cmd+shift+c",
+	"keybindings.copyWithContext.when": "editorTextFocus && editorHasSelection",
+	"config.copyWithContext.title": "Copy with Context",
+	"config.copyWithContext.description": "Configuration for Copy with Context extension",
+	"config.copyWithContext.format.title": "Output Format",
+	"config.copyWithContext.format.description": "Custom format template for the copied content",
+	"config.copyWithContext.includeWorkspace.title": "Include Workspace",
+	"config.copyWithContext.includeWorkspace.description": "Include workspace information in the output"
+}

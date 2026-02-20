@@ -1,0 +1,36 @@
+# 排除开发相关文件
+.vscode/
+.git/
+.gitignore
+
+# 排除源代码（TypeScript）
+src/
+**/*.ts
+**/*.map
+
+# 排除依赖管理
+node_modules/
+package-lock.json
+npm-debug.log
+
+# 排除测试
+test/
+**/*.test.*
+**/test/**
+
+# 排除文档开发
+PACKAGING.md
+PROJECT_SUMMARY.md
+USAGE.md
+package.sh
+package.bat
+
+# 排除配置文件
+tsconfig.json
+.eslintrc.json
+.vscode-test/
+
+# 排除临时文件
+*.tmp
+*.log
+.DS_Store

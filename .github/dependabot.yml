@@ -1,0 +1,79 @@
+# Dependabot 自动依赖更新配置
+# 文档: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
+
+version: 2
+updates:
+  # npm 依赖更新
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "your-username"
+    assignees:
+      - "your-username"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "automated"
+    # 忽略某些主要版本更新（可选）
+    ignore:
+      # 例如，忽略 TypeScript 的主要版本更新
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      # 忽略 @types/vscode 的主要版本更新
+      - dependency-name: "@types/vscode"
+        update-types: ["version-update:semver-major"]
+
+  # GitHub Actions 依赖更新
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "your-username"
+    assignees:
+      - "your-username"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "automated"
+      - "github-actions"
+
+# 自动合并配置（可选，需要 GitHub 仓库设置启用）
+# auto-merge: true
+
+# PR 标题模板
+pull-request-header: |
+  ⬆️ 依赖更新
+
+  这个 PR 自动更新了项目的依赖包。
+
+  **注意**: 请在合并前仔细测试所有变更。
+
+# 评论模板（可选）
+# commit-message:
+#   body: |
+#     这个 PR 更新了依赖包。
+#
+#     变更内容:
+#     - {{#each updates}}- {{#if commitMessage}}{{commitMessage}}{{else}}{{dependencyName}} from {{fromVersion}} to {{toVersion}}{{/if}}
+#     {{/each}}
+#
+#     测试计划:
+#     - [ ] 运行 `npm install`
+#     - [ ] 运行 `npm test`
+#     - [ ] 运行 `npm run lint`
+#     - [ ] 手动测试扩展功能
